@@ -115,6 +115,7 @@ function showMessages() {
     $("#messages").fadeIn(5000,
         function() {
             showLoveU()
+            $("#chrismasBell").slideDown(2000);
         })
 }
 function adjustWordsPosition() {
@@ -131,7 +132,5 @@ function showLoveU() {
     })
 };
 function showloveImgU(){
-    $("#loveImg").fadeIn(2000,function () {
-        $("#chrismasBell").slideDown(3000);
-    })
+    $("#loveImg").fadeIn(2000)
 }

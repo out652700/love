@@ -4,46 +4,7 @@
 <title>love2019</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
-<style type="text/css">
 
-		@font-face {
-
-			font-family: digit;
-
-			src: url('digital-7_mono.ttf') format("truetype");
-
-		}
-		#code{
-			display: none;
-		}
-
-	#loveImg{
-		position:relative;
-		left:380px;
-		top:-94px;
-		padding: 2px;
-		width:100px;height:100px;
-		display:none;
-		border: 10px solid;
-		border: 1px solid transparent;
-		border-radius: 200px;
-		background: linear-gradient(to right,#ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-		transition: all 0.6s;
-	}
-	#loveImg:hover{
-		transform: scale(1.4);
-	}
-
-	#chrismasBell{
-		width: 5vw;
-		height: 8vh;
-		position:relative;
-		left:400px;
-		top:-95px;
-		display:none;
-		cursor: pointer;
-	}
-	</style>
 <link href="css/default.css" type="text/css" rel="stylesheet"/>
 	<link href="../../component/shake/shake-master-150111210025/css/shake.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -93,8 +54,10 @@ Love u forever and ever.<br />
 <div class="signature">- hackerzhou</div>
 </div>
 	<img id="loveImg" src="img/mm.jpg"/>
-	<img id="chrismasBell" onclick="backChristmas()" class="shake shake-rotate" src="img/ChristmasBell .png"/>
 </div>
+	<img id="chrismasBell" onclick="backChristmas()" class="shake shake-rotate" src="img/christmasBell.png" style="position:relative;
+		left:310px;
+		top:-481px;"/>
 </div>
 </div>
 </div>
@@ -197,5 +160,53 @@ Love u forever and ever.<br />
 		
 
 	</script>
+<style type="text/css">
+
+	@font-face {
+
+		font-family: digit;
+
+		src: url('digital-7_mono.ttf') format("truetype");
+
+	}
+	#code{
+		display: none;
+	}
+
+	#loveImg{
+		position:relative;
+		left:217px;
+		top:-5px;
+		padding: 2px;
+		width:100px;height:100px;
+		display:none;
+		border: 10px solid;
+		border: 1px solid transparent;
+		border-radius: 200px;
+		/*background: linear-gradient(to right,#ff9a9e 0%, #fecfef 99%, #fecfef 100%);*/
+		transition: all 0.6s;
+		animation: glow 2000ms ease-out infinite alternate;
+	}
+	@keyframes glow {
+		0% {
+			border-color: #ff9a9e;
+			box-shadow: 0 0 5px #de8488, inset 0 0 5px #e87c80, 0 1px 0 #f7b7e2;
+		}
+		100% {
+			border-color: #ff9a9e;
+			box-shadow: 0 0 20px #e85459, inset 0 0 10px #9e3639, 0 1px 0 #fecfef;
+		}
+	}
+	#loveImg:hover{
+		transform: scale(1.4);
+	}
+
+	#chrismasBell{
+		width: 3vw;
+		/*height: 5vh;*/
+		display:none;
+		cursor: pointer;
+	}
+</style>
 </body>
 </html>
