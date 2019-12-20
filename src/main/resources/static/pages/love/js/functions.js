@@ -114,9 +114,9 @@ function showMessages() {
     adjustWordsPosition();
     $("#messages").fadeIn(5000,
         function() {
-            showLoveU()
-            $("#chrismasBell").slideDown(2000);
-        })
+        showLoveU()
+        $("#chrismasBell").slideDown(2000);
+    })
 }
 function adjustWordsPosition() {
     $("#words").css("position", "absolute");
